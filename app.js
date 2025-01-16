@@ -43,7 +43,7 @@ const request = async (req, res) => {
         } catch (error) {
             if (err) new Error(err)
         }
-    } else if (req.url === "/putt" && req.method == "PUT") {
+    } else if (req.url === "/put" && req.method == "PUT") {
         try {
             req.body = await parser(req);
             const { id, failorSuccess } = req.body
